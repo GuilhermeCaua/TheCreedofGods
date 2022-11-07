@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static PauseTela;
 
 public class Player : MonoBehaviour
 {
         public Animator Anim;
         public float speed;
         public static float fixedDeltaTime;
+        private bool EstaPausado;
 
         // Update is called once per frame
         void FixedUpdate()
         {
-                movePlayer();
+                if (!EstaPausado)
+                {
+                        movePlayer();
+                }
         }
 
 

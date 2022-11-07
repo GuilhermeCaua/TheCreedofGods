@@ -6,6 +6,6 @@ public class centralização : MonoBehaviour
 {
     void Update()
     {
-        transform.position += (transform.parent.position - transform.position) * 5 * Time.deltaTime;
+        transform.position += (transform.parent.position - transform.position) * 50 * Time.deltaTime;
     }
 }
